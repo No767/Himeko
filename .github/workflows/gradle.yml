@@ -32,7 +32,7 @@ jobs:
         uses: gradle/gradle-build-action@v2
         with:
           gradle-version: wrapper
-          arguments: build
+          arguments: build -x test # As of now tests are not set up. So we'll ignore them
 
       - name: Get Branch Name
         id: branch-name
