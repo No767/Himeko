@@ -4,7 +4,7 @@
 
 ![Himeko](./assets/logos/himeko-rounded-200.png)
 
-![Java Version](https://img.shields.io/badge/Java-17-blue?logo=openjdk&logoColor=white) [![Gradle Build](https://github.com/No767/Himeko/actions/workflows/gradle.yml/badge.svg)](https://github.com/No767/Himeko/actions/workflows/gradle.yml) ![GitHub](https://img.shields.io/github/license/No767/Himeko?label=License&logo=github)
+![Java Version](https://img.shields.io/badge/Java-17-blue?logo=openjdk&logoColor=white) [![CodeQL](https://github.com/No767/Himeko/actions/workflows/codeql.yml/badge.svg)](https://github.com/No767/Himeko/actions/workflows/codeql.yml) [![Gradle Build](https://github.com/No767/Himeko/actions/workflows/gradle.yml/badge.svg)](https://github.com/No767/Himeko/actions/workflows/gradle.yml) ![GitHub](https://img.shields.io/github/license/No767/Himeko?label=License&logo=github)
 
 Kumiko's web backend, built for fault tolerance and scalability.
 
