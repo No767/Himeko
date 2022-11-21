@@ -28,23 +28,26 @@ jobs:
           distribution: 'temurin'
           java-version: 17
 
-      - name: Validate Gradle Wrapper
-        uses: gradle/wrapper-validation-action@v1
-
-      - name: Make Gradle Wrapper Script Executable
-        run: |
-          sudo chmod +x gradlew
-
-      - name: Setup Gradle and Build JAR
-        uses: gradle/gradle-build-action@v2
-        with:
-          gradle-version: wrapper
-          arguments: build -x test # As of now tests are not set up. So we'll ignore them
+#      - name: Validate Gradle Wrapper
+#        uses: gradle/wrapper-validation-action@v1
+#
+#      - name: Make Gradle Wrapper Script Executable
+#        run: |
+#          sudo chmod +x gradlew
+#
+#      - name: Setup Gradle and Build JAR
+#        uses: gradle/gradle-build-action@v2
+#        with:
+#          gradle-version: wrapper
+#          arguments: build -x test # As of now tests are not set up. So we'll ignore them
 
       - name: Initialize CodeQL
         uses: github/codeql-action/init@v2
         with:
           languages: java
+
+      - name: Autobuild
+        uses: github/codeql-action/autobuild@v2
 
       - name: Perform CodeQL Analysis
         uses: github/codeql-action/analyze@v2
