@@ -2,7 +2,7 @@
 
 # Himeko
 
-![Himeko](./assets/himeko-rounded.png)
+![Himeko](./assets/logos/himeko-rounded.png)
 
 Kumiko's web backend, built for fault tolerance and scalability.
 
